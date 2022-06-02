@@ -1,3 +1,6 @@
 # eye_control_mouse
 This project made by python. Allows to control mouse with eyes and face actions. 
 Run gfk.py and get your in to rectangle for calibrate
+
+ABSTRACT
+These eye zones are provided as an introduction to the CNN model, which is trained with 2874 eye data (https://github.com/iparaskev/simple-blink-detector), and it is determined that the eye is closed or open. The CNN model 1500 is trained on a public eye image dataset representing open and 1374 closed-eye conditions. The left eye closed and opened state allows the mouse to click left and the right eye to close and open, and the right mouse to click. In addition, the location of the face detected with Haar Cascade is used to model mouse motion. The developed system is a real-time hybrid system with a combination of different methods and has been tested on different users. According to the test results, it was observed that the system correctly identified the eyes and the closed state of these eyes, classifying the blink event with CNN in both eyes correctly. However, it has been determined that there has been a slowness in modeling mouse movement or a poor fit to facial movement. The next study will focus on this issue and improve it by fine-tuning the system with data from many people.
